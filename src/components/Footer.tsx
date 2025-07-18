@@ -17,7 +17,7 @@ const Footer = () => {
               Desarrollamos soluciones tecnológicas simples, accesibles y
               automatizadas para PyMEs y emprendedores.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <Button
                 variant="ghost"
                 size="sm"
@@ -25,21 +25,20 @@ const Footer = () => {
               >
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
+              <a
+                href="https://instagram.com/solbitdev"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Instagram className="h-5 w-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-gray-400 hover:text-white hover:bg-gray-800"
-              >
-                <Twitter className="h-5 w-5" />
-              </Button>
-            </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-gray-400 hover:text-white hover:bg-gray-800"
+                >
+                  <Instagram className="h-5 w-5" />
+                </Button>
+              </a>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -103,7 +102,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <Mail className="h-4 w-4 mr-3" />
-                <span className="text-sm">hellosolbit@gmail.com</span>
+                <span className="text-sm">info@solbit.com.ar</span>
               </div>
               {/* <div className="flex items-center text-gray-300">
                 <Phone className="h-4 w-4 mr-3" />
