@@ -166,7 +166,7 @@ const FounderPage = () => {
                       className="rounded-full"
                     >
                       <Mail className="h-4 w-4 mr-2" />
-                      jmgarcia@solbit.com.ar
+                      Contacto
                     </Button>
                   </a>
                 </div>
