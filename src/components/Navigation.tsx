@@ -1,8 +1,7 @@
-
-import { useState } from 'react';
-import { Moon, Sun, Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { Moon, Sun, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 interface NavigationProps {
   darkMode: boolean;
@@ -13,23 +12,23 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '/', label: 'Inicio', isRoute: true },
-    { href: '#sobre-nosotros', label: 'Sobre Nosotros', isRoute: false },
-    { href: '#progreso', label: 'Progreso', isRoute: false },
-    { href: '/fundador', label: 'Fundador', isRoute: true },
-    { href: '/blog', label: 'Blog', isRoute: true },
-    { href: '#contacto', label: 'Contacto', isRoute: false }
+    { href: "/", label: "Inicio", isRoute: true },
+    { href: "#sobre-nosotros", label: "Sobre Nosotros", isRoute: false },
+    { href: "#progreso", label: "Progreso", isRoute: false },
+    { href: "/fundador", label: "Fundador", isRoute: true },
+    { href: "/blog", label: "Blog", isRoute: true },
+    { href: "#contacto", label: "Contacto", isRoute: false },
   ];
 
   const scrollToSection = (href: string) => {
     const section = document.querySelector(href);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
   };
 
-  const handleNavClick = (item: typeof navItems[0]) => {
+  const handleNavClick = (item: (typeof navItems)[0]) => {
     if (item.isRoute) {
       setIsOpen(false);
     } else {
@@ -52,7 +51,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 item.isRoute ? (
@@ -74,19 +73,23 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
                 )
               ))}
             </div>
-          </div>
+          </div> */}
 
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleDarkMode}
               className="p-2"
             >
-              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              {darkMode ? (
+                <Sun className="h-4 w-4" />
+              ) : (
+                <Moon className="h-4 w-4" />
+              )}
             </Button>
 
-            {/* Mobile menu button */}
+            {/* Mobile menu button }
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -94,10 +97,14 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="p-2"
               >
-                {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+                {isOpen ? (
+                  <X className="h-4 w-4" />
+                ) : (
+                  <Menu className="h-4 w-4" />
+                )}
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -105,7 +112,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
+            {navItems.map((item) =>
               item.isRoute ? (
                 <Link
                   key={item.href}
@@ -124,7 +131,7 @@ const Navigation = ({ darkMode, toggleDarkMode }: NavigationProps) => {
                   {item.label}
                 </button>
               )
-            ))}
+            )}
           </div>
         </div>
       )}
