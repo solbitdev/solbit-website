@@ -63,7 +63,7 @@ const Index = () => {
         <Hero />
         <About />
         <Timeline />
-        <FounderPreview />
+        {/* <FounderPreview /> */}
         {/* <BlogPreview /> */}
         {/* <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4 py-16">
           <Contact />

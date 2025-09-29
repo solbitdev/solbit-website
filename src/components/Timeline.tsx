@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 const Timeline = () => {
   const timelineItems = [
     {
-      date: "Junio 2025",
+      date: "Mayo 2025",
       title: "Inicio del Proyecto",
       description:
         "Conceptualización de SolBit y aplicación a NAVES Argentina 2025",
@@ -12,45 +12,45 @@ const Timeline = () => {
       icon: Rocket,
     },
     {
-      date: "Julio 2025",
+      date: "Junio 2025",
       title: "Aceptación en NAVES",
       description:
         "Seleccionados para participar en el programa de aceleración más prestigioso de Argentina",
+      status: "completed",
+      icon: Rocket,
+    },
+    {
+      date: "Julio 2025",
+      title: "Investigación de Mercado",
+      description:
+        "Análisis profundo de necesidades de PyMEs y validación de hipótesis iniciales",
+      status: "completed",
+      icon: Rocket,
+    },
+    {
+      date: "Agosto 2025",
+      title: "Desarrollo del MVP",
+      description:
+        "Construcción del producto mínimo viable con las funcionalidades core",
+      status: "completed",
+      icon: Rocket,
+    },
+    {
+      date: "Septiembre 2025",
+      title: "Primeras Validaciones",
+      description: "Testeo con usuarios beta y primeros feedbacks del mercado",
       status: "in-progress",
       icon: Clock,
     },
     {
-      date: "Septiembre 2025",
-      title: "Investigación de Mercado",
-      description:
-        "Análisis profundo de necesidades de PyMEs y validación de hipótesis iniciales",
-      status: "upcoming",
-      icon: Calendar,
-    },
-    {
       date: "Octubre 2025",
-      title: "Desarrollo del MVP",
-      description:
-        "Construcción del producto mínimo viable con las funcionalidades core",
-      status: "upcoming",
-      icon: Calendar,
-    },
-    {
-      date: "Noviembre 2025",
-      title: "Primeras Validaciones",
-      description: "Testeo con usuarios beta y primeros feedbacks del mercado",
-      status: "upcoming",
-      icon: Calendar,
-    },
-    {
-      date: "Diciembre 2025",
       title: "Iteración y Mejoras",
       description: "Refinamiento del producto basado en feedback de usuarios",
       status: "upcoming",
       icon: Calendar,
     },
     {
-      date: "Enero 2026",
+      date: "Diciembre 2025",
       title: "Lanzamiento Beta",
       description:
         "Apertura de la plataforma para early adopters seleccionados",
@@ -58,7 +58,7 @@ const Timeline = () => {
       icon: Calendar,
     },
     {
-      date: "Marzo 2026",
+      date: "Febrero 2026",
       title: "Lanzamiento Oficial",
       description:
         "Disponibilidad completa de la plataforma para el público general",
@@ -66,7 +66,7 @@ const Timeline = () => {
       icon: Calendar,
     },
     {
-      date: "Junio 2026",
+      date: "Mayo 2026",
       title: "Expansión",
       description:
         "Escalamiento y nuevas funcionalidades basadas en demanda del mercado",
